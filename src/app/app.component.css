@@ -1,0 +1,28 @@
+body{
+    background: #f7f7f7;
+    font-family: 'Open Sans', sans-serif;
+    color: #4f4f4f;;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.body-container{
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 15px;
+}
+.content-container{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: wrap;
+}

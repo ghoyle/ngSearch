@@ -1,0 +1,30 @@
+<div class="column column--full">
+  <form action="">
+    <div class="input-group">
+      <div class="btn btn-input-icon">
+        <img src="../../assets/images/search.png">
+      </div>
+      <div class="input-container">
+        <input type="text" (keyup)="search($event.target.value)" id="name" placeholder="Search" id="searchBox">
+      </div>
+    </div>
+  </form>
+</div>
+<div id="searchResults">
+  <article class="column column--third" *ngFor="let artist of artists$ | async">
+    <div class="tile">
+      <div class="tile--image-container">
+        <img src="{{artist.img}}" alt="" class="tile--image">
+      </div>
+      <h3 class="tile--title">{{artist.name}}</h3>
+      <button class="btn">Follow</button>
+    </div>
+  </article>
+</div>
+
+
+<!-- 
+Copyright 2017-2018 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
